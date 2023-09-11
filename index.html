@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .material-symbols-outlined{
+            font-variation-settings: "FILL" 0,"wght" 400,"GRAD" 0,"opsz" 48;
+            color:#fff;
+        }
+        nav{
+            height:50px;
+            display:flex;
+            align-items:center;
+            padding:5px;
+            background-color: rgb(112, 107, 107);
+
+
+
+        }
+        .large-screen{
+            max-width:1200px;
+            width:100%;
+            justify-content: space-between;
+             display: none; 
+            margin:auto; 
+
+        }
+        .small-screen{
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+            flex-wrap: wrap;
+        }
+
+        .large-screen>img{
+            width:50px;
+
+
+        }
+        .small-screen>img{
+            width:30px;
+        }
+        .nav-links{
+            display:flex;
+            align-items:center;
+            
+          }
+        .nav-links a{
+            text-decoration: none;
+            margin-left: 15px;
+            color:azure;
+}
+.nav-links a:hover{
+    color:rgb(98, 174, 236);
+    scale:1.1;
+}
+.large-screen button{
+    padding:0px 40px;
+    margin:10px 0px;
+    border-radius: 5px;
+    background-color: rgb(20, 89, 168);
+    color: azure;
+    border: 0px;
+    font-weight: bold;
+
+}
+.large-screen button:hover{
+    scale:1.1;
+    cursor:pointer;
+}
+
+        @media screen and (min-width:800px)
+        {
+            .large-screen{
+                display:flex;
+            }
+            .small-screen{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section class="large-screen">
+         <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+         alt="logo">
+         <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+         </div>   
+        <button>login</button>
+     </section> 
+        
+
+        <section class="small-screen">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+            alt="logo">
+            <div>
+                  <span class="material-symbols-outlined"><i class="fa-solid fa-bars">
+                </i></span>
+            </div>
+ </section> 
+    </nav>
+     <main class="hero">
+        <div class="text">
+            <h2>say hi to</h2>
+            <h1>one card</h1>
+            <h4>co branded card issues</h4>
+            
+            <div class="img">
+
+            <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+            alt="sponsor1">
+            </div>
+            
+            <p>India's best metal credit card. Built with full-stack tech. Backed by
+                the principles of simplicity, transparency, and giving back control to
+                the use</p>
+        </div>
+    <video loop autoplay="autoplay" controls><source
+        src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+        type="video/mp4"/>
+
+
+    </video>
+</main>
+<div class="info">
+    <h1>No hidden fees ever</h1>
+    <h3>No joining fees</h3>
+    <h3>No Annual fees.</h3>
+    <h3>No rewards Redemption fees</h3>
+    
+
+</div>
+<footer>
+    <div class="row">
+    <div class="one">
+        <h1>one card</h1>
+        <p>            India's best metal credit card. Built with full-stack tech. Backed
+            by the principles of simplicity, transparency, and giving back
+            control to the user.
+</p>
+    </div>
+    <div class="nav">
+        <h1>Navigation</h1>
+        <a href="">home</a>
+        <a href="">About us</a>
+        <a href="">careers</a>
+        <a href="">offers</a>
+    </div>
+    <div class="support">
+        <h1>support</h1>
+        <h3>F.A.Q</h3>
+        <h3>cookies policy</h3>
+        <h3>terms of service</h3>
+        <h3>support</h3>
+
+    </div>
+    <div class="new">
+        <h1>Newsletter</h1>
+        <input type="text" placeholder="your email id here">
+        <button>subscribe</button>
+    </div>
+    </div>
+</footer>
+
+
+    
+
+</body>
+</html>
